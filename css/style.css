@@ -1,0 +1,114 @@
+:root {
+    --headFont: "Lobster", sans-serif;
+    --chatFont: "Arima", Serif;
+    --exsFont: "Montserrat", sans-serif;
+    --exc2Font: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgb(150, 240, 201), rgb(197, 230, 197));
+}
+
+h3 {
+    font-family: var(--chatFont);
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.logoHead {
+    font-family: var(--headFont);
+}
+
+.container {
+    /* background-color: red; */
+    height: 70vh;
+    background: linear-gradient(to right, rgb(100, 200, 201), rgb(197, 150, 197));
+    border: 2px solid rgba(0, 17, 255, 0.918);
+    box-shadow: 0 0 10px rgba(0, 17, 255, 0.918);
+    overflow-y: auto;
+}
+
+.message {
+    background-color: rgba(0, 17, 255, 0.918);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin: 17px 12px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 24%;
+    font-family: var(--exc2Font);
+    letter-spacing: 0.2px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.leaving {
+    background-color: rgba(255, 0, 0, 0.527);
+    border: 1px solid rgb(97, 47, 47);
+    text-align: center;
+}
+
+.joining {
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    text-align: center;
+}
+
+#messageInp {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px blue;
+    border: none;
+    padding: 4px;
+    height: 34px;
+    font-family: var(--exc2Font);
+}
+
+.btn {
+    cursor: pointer;
+    font-family: var(--exc2Font);
+    margin-top: -0.2%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+    }
+
+    .message {
+        width: 45%;
+        font-size: 14px !important;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .btn {
+        cursor: pointer;
+        font-family: var(--exc2Font);
+        margin-top: -0.2%;
+        font-size: 14px !important;
+    }
+
+
+}
